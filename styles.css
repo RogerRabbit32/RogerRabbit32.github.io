@@ -1,29 +1,56 @@
+@font-face {
+    font-family: 'NewYearFont';
+    src: url('media/fonts/great-vibes.regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
     height: 100vh;
     background-color: #f0f0f0; /* Background color for better visibility */
+    overflow: hidden; /* Hide scrollbar when overlay is visible */
+}
+
+body.overlay-visible {
+    overflow: hidden; /* Ensure overflow is still hidden when overlay is visible */
 }
 
 .grid-container {
     display: flex;
+    /*display: grid;*/
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 15px;
+    /*grid-template-columns: repeat(4, 1fr);*/
+    /*gap: 5px;*/
     justify-content: center;
     align-items: center;
+    /*max-width: 60%;*/
+    /*max-height: 60%;*/
+    /*align-content: center;*/
+    max-width: 60%; /* Set max-width to 60% of the viewport width */
+    width: 100%; /* Ensure the container takes 100% width within its max-width */
+    margin: auto; /* Center the container horizontally using auto margin */
+    max-height: 75vh; /* Set max-height to 80% of the viewport height */
+    overflow-y: hidden; /* Add vertical scrollbar if content overflows */
 }
 
 .image-container {
     position: relative;
-    width: 250px;
-    height: 250px;
+    /*width: 250px;*/
+    height: 220px;
     overflow: hidden;
     border-radius: 5px;
     cursor: pointer;
+    /*margin: 10px;*/
+    width: calc(25% - 20px); /* 25% width for four items in a row, deducting gap */
+    margin-bottom: 5px; /* Add margin to create spacing between rows */
 }
 
 .image-container img {
@@ -48,18 +75,46 @@ body {
 }
 
 .button {
-    padding: 15px; /* Increased padding for a larger button */
+    padding: 27px; /* Increased padding for a larger button */
     background: #ff6961; /* Coral color for a festive look */
     color: #fff;
     border-radius: 10px;
     cursor: pointer;
     transition: background 0.3s ease-in-out;
     font-family: 'cursive', cursive; /* Different font for a New Year's style */
-    font-size: 16px; /* Adjust font size as needed */
+    font-size: 30px; /* Adjust font size as needed */
+    border: 2px solid transparent; /* Add a transparent border initially */
 }
 
 .button:hover {
-    background: #ff6347; /* Darker coral color on hover */
+    background: #ec4426; /* Darker coral color on hover */
+    transform: scale(1.05); /* Slightly increase size on hover */
+    box-shadow: 0 0 10px rgb(255, 255, 255); /* Add a visible shadow border on hover */
+    font-size: 32px;
+}
+
+.header {
+    text-align: center;
+    font-family: 'NewYearFont', sans-serif; /* Replace 'NewYearFont' with the actual font name */
+    font-size: 75px;
+    margin-bottom: 40px;
+    margin-top: 50px;
+}
+
+.gift-box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px; /* Adjust the width as needed */
+    height: auto;
+}
+
+.tree {
+    position: fixed;
+    top: 40px;
+    right: 20px;
+    width: 300px; /* Adjust the width as needed */
+    height: auto;
 }
 
 #overlay {
@@ -84,7 +139,33 @@ body {
     text-align: center;
     position: relative;
     animation: fadeIn 0.5s ease-in-out; /* Fade-in animation */
+    width: 50%; /* Set width to 50% of the viewport width */
+    height: 70%; /* Set height to 50% of the viewport height */
 }
+
+.popup img {
+    width: 50%; /* Set image width to 50% of the popup width */
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.popup-content {
+    width: 50%; /* Set content width to 50% of the popup width */
+    padding: 0 20px;
+}
+
+.popup-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.popup-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+}
+
 
 @keyframes fadeIn {
     from {
@@ -98,7 +179,7 @@ body {
 .close-btn {
     cursor: pointer;
     color: #333;
-    font-size: 20px;
+    font-size: 40px;
     position: absolute;
     top: 10px;
     right: 10px;

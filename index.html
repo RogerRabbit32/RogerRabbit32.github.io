@@ -8,59 +8,196 @@
 </head>
 <body>
 
+<div class="header">Tonya's Box</div>
+
+<img src="media/images/tree.png" alt="Christmas Tree" class="tree">
+
 <div id="overlay">
     <div id="popup1" class="popup">
-        <span class="close-btn" onclick="closePopup('popup1')">&times;</span>
-        <h2>Pop-up 1</h2>
-        <p>This is some content in Pop-up 1.</p>
+        <img src="media/images/image1.jpg" alt="Popup Image">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popup1')">&times;</span>
+            <h2>Item Description</h2>
+            <p>This is some content describing the item on the image.</p>
+        </div>
     </div>
     <div id="popup2" class="popup">
-        <span class="close-btn" onclick="closePopup('popup2')">&times;</span>
-        <h2>Pop-up 1</h2>
-        <p>This is some content in Pop-up 2.</p>
+        <img src="media/images/image2.jpg" alt="Popup Image">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popup2')">&times;</span>
+            <h2>Item Description</h2>
+            <p>This is some content describing the item on the image.</p>
+        </div>
     </div>
     <div id="popup3" class="popup">
-        <span class="close-btn" onclick="closePopup('popup3')">&times;</span>
-        <h2>Pop-up 1</h2>
-        <p>This is some content in Pop-up 3.</p>
+        <img src="media/images/image3.jpg" alt="Popup Image">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popup3')">&times;</span>
+            <h2>Item Description</h2>
+            <p>This is some content describing the item on the image.</p>
+        </div>
+    </div>
+    <div id="popup4" class="popup">
+        <img src="media/images/image4.jpg" alt="Popup Image">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popup4')">&times;</span>
+            <h2>Item Description</h2>
+            <p>This is some content describing the item on the image.</p>
+        </div>
+    </div>
+    <div id="popup5" class="popup">
+        <img src="media/images/image5.jpg" alt="Popup Image">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popup5')">&times;</span>
+            <h2>Item Description</h2>
+            <p>This is some content describing the item on the image.</p>
+        </div>
+    </div>
+    <div id="popup6" class="popup">
+        <img src="media/images/image6.jpg" alt="Popup Image">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popup6')">&times;</span>
+            <h2>Item Description</h2>
+            <p>This is some content describing the item on the image.</p>
+        </div>
+    </div>
+    <div id="popup7" class="popup">
+        <img src="media/images/image7.jpg" alt="Popup Image">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popup7')">&times;</span>
+            <h2>Item Description</h2>
+            <p>This is some content describing the item on the image.</p>
+        </div>
+    </div>
+    <div id="popup8" class="popup">
+        <img src="media/images/image8.jpg" alt="Popup Image">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popup8')">&times;</span>
+            <h2>Item Description</h2>
+            <p>This is some content describing the item on the image.</p>
+        </div>
+    </div>
+    <div id="popup9" class="popup">
+        <img src="media/images/image9.jpg" alt="Popup Image">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popup9')">&times;</span>
+            <h2>Item Description</h2>
+            <p>This is some content describing the item on the image.</p>
+        </div>
+    </div>
+    <div id="popup10" class="popup">
+        <img src="media/images/image10.jpg" alt="Popup Image">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popup10')">&times;</span>
+            <h2>Item Description</h2>
+            <p>This is some content describing the item on the image.</p>
+        </div>
+    </div>
+    <div id="popup11" class="popup">
+        <img src="media/images/image11.jpg" alt="Popup Image">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popup11')">&times;</span>
+            <h2>Item Description</h2>
+            <p>This is some content describing the item on the image.</p>
+        </div>
+    </div>
+    <div id="popup12" class="popup">
+        <img src="media/images/image12.jpg" alt="Popup Image">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('popup12')">&times;</span>
+            <h2>Item Description</h2>
+            <p>This is some content describing the item on the image.</p>
+        </div>
     </div>
     <!-- Add more pop-ups as needed -->
 </div>
 
+
 <div class="grid-container">
+
     <!-- Row 1 -->
     <div class="image-container" onmouseover="showOverlay(this)" onmouseout="hideOverlay(this)">
-        <img src="image1.png" alt="Image 1">
+        <img src="media/images/image1.jpg" alt="Image 1">
         <div class="overlay" onclick="event.stopPropagation();">
             <div class="button" onclick="openPopup('popup1')">Подробнее</div>
         </div>
     </div>
-
-    <!-- Add more image containers for Row 1 as needed -->
-
-    <!-- Row 2 -->
     <div class="image-container" onmouseover="showOverlay(this)" onmouseout="hideOverlay(this)">
-        <img src="image2.png" alt="Image 2">
+        <img src="media/images/image2.jpg" alt="Image 2">
         <div class="overlay" onclick="event.stopPropagation();">
             <div class="button" onclick="openPopup('popup2')">Подробнее</div>
         </div>
     </div>
-
-    <!-- Add more image containers for Row 2 as needed -->
-
-    <!-- Row 3 -->
     <div class="image-container" onmouseover="showOverlay(this)" onmouseout="hideOverlay(this)">
-        <img src="image3.png" alt="Image 3">
+        <img src="media/images/image3.jpg" alt="Image 3">
         <div class="overlay" onclick="event.stopPropagation();">
             <div class="button" onclick="openPopup('popup3')">Подробнее</div>
         </div>
     </div>
+    <div class="image-container" onmouseover="showOverlay(this)" onmouseout="hideOverlay(this)">
+        <img src="media/images/image4.jpg" alt="Image 4">
+        <div class="overlay" onclick="event.stopPropagation();">
+            <div class="button" onclick="openPopup('popup4')">Подробнее</div>
+        </div>
+    </div>
 
-    <!-- Add more image containers for Row 3 as needed -->
 
-    <!-- Add more rows as needed -->
+    <!-- Row 2 -->
+    <div class="image-container" onmouseover="showOverlay(this)" onmouseout="hideOverlay(this)">
+        <img src="media/images/image5.jpg" alt="Image 5">
+        <div class="overlay" onclick="event.stopPropagation();">
+            <div class="button" onclick="openPopup('popup5')">Подробнее</div>
+        </div>
+    </div>
+    <div class="image-container" onmouseover="showOverlay(this)" onmouseout="hideOverlay(this)">
+        <img src="media/images/image6.jpg" alt="Image 6">
+        <div class="overlay" onclick="event.stopPropagation();">
+            <div class="button" onclick="openPopup('popup6')">Подробнее</div>
+        </div>
+    </div>
+    <div class="image-container" onmouseover="showOverlay(this)" onmouseout="hideOverlay(this)">
+        <img src="media/images/image7.jpg" alt="Image 7">
+        <div class="overlay" onclick="event.stopPropagation();">
+            <div class="button" onclick="openPopup('popup7')">Подробнее</div>
+        </div>
+    </div>
+    <div class="image-container" onmouseover="showOverlay(this)" onmouseout="hideOverlay(this)">
+        <img src="media/images/image8.jpg" alt="Image 8">
+        <div class="overlay" onclick="event.stopPropagation();">
+            <div class="button" onclick="openPopup('popup8')">Подробнее</div>
+        </div>
+    </div>
+
+
+    <!-- Row 3 -->
+    <div class="image-container" onmouseover="showOverlay(this)" onmouseout="hideOverlay(this)">
+        <img src="media/images/image9.jpg" alt="Image 9">
+        <div class="overlay" onclick="event.stopPropagation();">
+            <div class="button" onclick="openPopup('popup9')">Подробнее</div>
+        </div>
+    </div>
+    <div class="image-container" onmouseover="showOverlay(this)" onmouseout="hideOverlay(this)">
+        <img src="media/images/image10.jpg" alt="Image 10">
+        <div class="overlay" onclick="event.stopPropagation();">
+            <div class="button" onclick="openPopup('popup10')">Подробнее</div>
+        </div>
+    </div>
+    <div class="image-container" onmouseover="showOverlay(this)" onmouseout="hideOverlay(this)">
+        <img src="media/images/image11.jpg" alt="Image 11">
+        <div class="overlay" onclick="event.stopPropagation();">
+            <div class="button" onclick="openPopup('popup11')">Подробнее</div>
+        </div>
+    </div>
+    <div class="image-container" onmouseover="showOverlay(this)" onmouseout="hideOverlay(this)">
+        <img src="media/images/image12.jpg" alt="Image 12">
+        <div class="overlay" onclick="event.stopPropagation();">
+            <div class="button" onclick="openPopup('popup12')">Подробнее</div>
+        </div>
+    </div>
 
 </div>
+
+<img src="media/images/box.png" alt="Gift Box" class="gift-box">
 
 <script src="script.js"></script>
 

@@ -6,12 +6,14 @@ function openPopup(popupId) {
     }
 
     currentPopup = popupId;
+    document.body.classList.add('overlay-visible');
     document.getElementById('overlay').style.display = 'flex';
-    document.getElementById(popupId).style.display = 'block';
+    document.getElementById(popupId).style.display = 'flex';
 }
 
 function closePopup(popupId) {
     currentPopup = null;
+    document.body.classList.remove('overlay-visible');
     document.getElementById('overlay').style.display = 'none';
     document.getElementById(popupId).style.display = 'none';
 }
