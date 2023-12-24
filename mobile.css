@@ -9,31 +9,32 @@
         overflow: auto;
     }
 
+    .header {
+        margin-bottom: 0;
+    }
+
     .tree,
     .gift-box {
         position: static; /* Reset the position to the default static */
         width: 100%; /* Adjusted width for full-width on mobile */
-        height: auto;
         bottom: auto; /* Reset bottom position */
         right: auto; /* Reset right position */
         transform: none; /* Remove transform property */
     }
+
     .grid-container {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         gap: 15px;
-        justify-content: center;
-        align-items: center;
         max-width: 100%;
         width: 100%;
-        margin: auto;
-        /*max-height: 75vh;*/
-        overflow-y: auto; /* Use 'auto' to allow vertical scrolling if content exceeds the container height */
+        margin-left: 10px;
+        margin-right: 20px;
     }
 
     .image-container {
         position: relative;
-        height: 250px;
+        height: 270px;
         overflow: hidden;
         border-radius: 5px;
         cursor: pointer;
