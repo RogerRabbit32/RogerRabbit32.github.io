@@ -109,7 +109,7 @@ body.overlay-visible {
     font-family: 'NewYearFont', sans-serif; /* Replace 'NewYearFont' with the actual font name */
     font-size: 75px;
     margin-bottom: 40px;
-    margin-top: 50px;
+    margin-top: 90px;
 }
 
 .gift-box {
@@ -122,7 +122,7 @@ body.overlay-visible {
 
 .tree {
     position: fixed;
-    top: 40px;
+    top: 60px;
     right: 20px;
     width: 300px; /* Adjust the width as needed */
     height: auto;
