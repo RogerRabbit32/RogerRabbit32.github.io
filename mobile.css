@@ -63,7 +63,7 @@
 
     .popup-content {
         width: 100%; /* Set content width to 100% for full-width on mobile */
-        padding: 0 10px; /* Adjusted padding for better fit on mobile */
+        padding: 0; /* Adjusted padding for better fit on mobile */
     }
 
     .close-btn {
