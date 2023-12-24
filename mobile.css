@@ -1,0 +1,50 @@
+@media only screen and (max-width: 767px) {
+    .tree,
+    .gift-box {
+        position: static; /* Reset the position to the default static */
+        width: 100%; /* Adjusted width for full-width on mobile */
+        height: auto;
+        bottom: auto; /* Reset bottom position */
+        right: auto; /* Reset right position */
+        transform: none; /* Remove transform property */
+    }
+
+    .grid-container {
+        max-width: 100%; /* Set max-width to 100% for full-width on mobile */
+        margin: 0; /* Remove auto margin for full-width on mobile */
+        max-height: none; /* Remove max-height for full-height on mobile */
+    }
+
+    .image-container {
+        position: relative;
+        /*height: 200px; !* Adjusted height for mobile *!*/
+        overflow: hidden;
+        border-radius: 5px;
+        cursor: pointer;
+        width: calc(100% - 20px); /* 50% width for two items in a row on mobile, deducting gap */
+        margin-bottom: 10px; /* Adjusted margin for better spacing on mobile */
+    }
+
+    /*.image-container {*/
+    /*    width: calc(100% - 20px); !* 100% width for one item in a row on mobile, deducting gap *!*/
+    /*    margin-bottom: 10px; !* Adjusted margin for better spacing on mobile *!*/
+    /*}*/
+
+    .popup {
+        width: 90%; /* Adjusted width for better fit on mobile */
+        height: 70vh; /* Adjusted height for better fit on mobile */
+    }
+
+    .popup img {
+        width: 100%; /* Set image width to 100% for full-width on mobile */
+    }
+
+    .popup-content {
+        width: 100%; /* Set content width to 100% for full-width on mobile */
+        padding: 0 10px; /* Adjusted padding for better fit on mobile */
+    }
+
+    .close-btn {
+        font-size: 30px; /* Adjusted font size for better fit on mobile */
+    }
+}

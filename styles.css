@@ -5,6 +5,17 @@
     font-style: normal;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
 
 body {
     font-family: 'Arial', sans-serif;
@@ -15,12 +26,12 @@ body {
     /*align-items: center;*/
     height: 100vh;
     background-color: #f0f0f0; /* Background color for better visibility */
-    overflow: hidden; /* Hide scrollbar when overlay is visible */
+    /*overflow: hidden; !* Hide scrollbar when overlay is visible *!*/
 }
 
-body.overlay-visible {
-    overflow: hidden; /* Ensure overflow is still hidden when overlay is visible */
-}
+/*body.overlay-visible {*/
+/*    overflow: hidden; !* Ensure overflow is still hidden when overlay is visible *!*/
+/*}*/
 
 .grid-container {
     display: flex;
@@ -164,16 +175,6 @@ body.overlay-visible {
     font-size: 16px;
     line-height: 1.5;
     color: #555;
-}
-
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
 }
 
 .close-btn {
