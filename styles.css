@@ -26,12 +26,12 @@ body {
     /*align-items: center;*/
     height: 100vh;
     background-color: #f0f0f0; /* Background color for better visibility */
-    /*overflow: hidden; !* Hide scrollbar when overlay is visible *!*/
+    overflow: hidden; /* Hide scrollbar when overlay is visible */
 }
 
-/*body.overlay-visible {*/
-/*    overflow: hidden; !* Ensure overflow is still hidden when overlay is visible *!*/
-/*}*/
+body.overlay-visible {
+    overflow: hidden; /* Ensure overflow is still hidden when overlay is visible */
+}
 
 .grid-container {
     display: flex;
