@@ -52,18 +52,20 @@
 
     .popup {
         width: 90%; /* Adjusted width for better fit on mobile */
-        height: auto;
-        /*height: 70vh; !* Adjusted height for better fit on mobile *!*/
+        /*height: auto;*/
+        height: 70vh; /* Adjusted height for better fit on mobile */
         flex-direction: column;
     }
 
     .popup img {
         width: 100%; /* Set image width to 100% for full-width on mobile */
+        height: auto;
     }
 
     .popup-content {
         width: 100%; /* Set content width to 100% for full-width on mobile */
         padding: 0; /* Adjusted padding for better fit on mobile */
+        overflow-y: auto;
     }
 
     .close-btn {
