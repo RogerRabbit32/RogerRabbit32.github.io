@@ -53,7 +53,7 @@
     .popup {
         width: 90%; /* Adjusted width for better fit on mobile */
         /*height: auto;*/
-        height: 70vh; /* Adjusted height for better fit on mobile */
+        height: auto; /* Adjusted height for better fit on mobile */
         flex-direction: column;
     }
 
@@ -66,6 +66,15 @@
         width: 100%; /* Set content width to 100% for full-width on mobile */
         padding: 0; /* Adjusted padding for better fit on mobile */
         overflow-y: auto;
+    }
+
+    .popup-content h2 {
+        font-size: 22px; /* Adjust font size for better fit on mobile */
+        margin-bottom: 20px;
+    }
+
+    .popup-content p {
+        font-size: 10px; /* Adjust font size for better fit on mobile */
     }
 
     .close-btn {
