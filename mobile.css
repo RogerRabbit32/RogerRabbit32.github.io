@@ -1,5 +1,6 @@
 @media only screen and (max-width: 767px) {
 
+
     body {
         /* Remove the overflow property or set it to 'visible' or 'auto' */
         overflow: auto; /* Use 'auto' to allow scrolling if content exceeds the viewport height */
@@ -17,51 +18,33 @@
     .gift-box {
         position: static; /* Reset the position to the default static */
         width: 100%; /* Adjusted width for full-width on mobile */
-        bottom: auto; /* Reset bottom position */
-        right: auto; /* Reset right position */
-        transform: none; /* Remove transform property */
+        /* Remove the following lines */
+        /* bottom: auto; */
+        /* right: auto; */
+        /* transform: none; */
     }
 
     .grid-container {
         display: flex;
         flex-direction: column;
+        flex-wrap: nowrap;
         gap: 15px;
         max-width: 100%;
         width: 100%;
-        margin-left: 10px;
-        margin-right: 20px;
+        padding: 10px; /* Add padding to create space on the sides */
+        box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        /*overflow-y: auto; !* Allow vertical scrolling if content exceeds the container height *!*/
     }
 
     .image-container {
         position: relative;
-        height: 270px;
+        height: auto;
         overflow: hidden;
         border-radius: 5px;
         cursor: pointer;
         width: calc(100% - 10px);
         margin-bottom: 10px;
     }
-
-    /*.grid-container {*/
-    /*    max-width: 100%; !* Set max-width to 100% for full-width on mobile *!*/
-    /*    margin: 0; !* Remove auto margin for full-width on mobile *!*/
-    /*    max-height: none; !* Remove max-height for full-height on mobile *!*/
-    /*}*/
-
-    /*.image-container {*/
-    /*    position: relative;*/
-    /*    !*height: 200px; !* Adjusted height for mobile *!*!*/
-    /*    overflow: hidden;*/
-    /*    border-radius: 5px;*/
-    /*    cursor: pointer;*/
-    /*    width: calc(100% - 20px); !* 50% width for two items in a row on mobile, deducting gap *!*/
-    /*    margin-bottom: 10px; !* Adjusted margin for better spacing on mobile *!*/
-    /*}*/
-
-    /*.image-container {*/
-    /*    width: calc(100% - 20px); !* 100% width for one item in a row on mobile, deducting gap *!*/
-    /*    margin-bottom: 10px; !* Adjusted margin for better spacing on mobile *!*/
-    /*}*/
 
     .popup {
         width: 90%; /* Adjusted width for better fit on mobile */
