@@ -5,6 +5,10 @@
         overflow: auto; /* Use 'auto' to allow scrolling if content exceeds the viewport height */
     }
 
+    body.overlay-visible {
+        overflow: auto;
+    }
+
     .tree,
     .gift-box {
         position: static; /* Reset the position to the default static */
@@ -29,7 +33,7 @@
 
     .image-container {
         position: relative;
-        height: 150px;
+        height: 250px;
         overflow: hidden;
         border-radius: 5px;
         cursor: pointer;
