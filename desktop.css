@@ -32,7 +32,8 @@ body {
     /*justify-content: center;*/
     /*align-items: center;*/
     height: 100vh;
-    background-color: #f0f0f0; /* Background color for better visibility */
+    /*background-color: #daa2c3; !* Background color for better visibility *!*/
+    background: linear-gradient(215deg, #FFA07A 15%, #87CEEB 85%);
     overflow: hidden; /* Hide scrollbar when overlay is visible */
 }
 
@@ -94,7 +95,7 @@ body.overlay-visible {
 
 .button {
     padding: 27px; /* Increased padding for a larger button */
-    background: #ff6961; /* Coral color for a festive look */
+    background: #e8a596; /* Coral color for a festive look */
     color: #fff;
     border-radius: 10px;
     cursor: pointer;
@@ -105,7 +106,7 @@ body.overlay-visible {
 }
 
 .button:hover {
-    background: #ec4426; /* Darker coral color on hover */
+    background: #ec7f6c; /* Darker coral color on hover */
     transform: scale(1.05); /* Slightly increase size on hover */
     box-shadow: 0 0 10px rgb(255, 255, 255); /* Add a visible shadow border on hover */
     font-size: 32px;
